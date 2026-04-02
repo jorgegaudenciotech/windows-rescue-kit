@@ -1,5 +1,9 @@
 # windows-rescue-kit
 
+> [!WARNING]
+> ### 🚨 Atenção e Responsabilidade
+> Alguns comandos podem realizar alterações profundas no sistema. Sempre faça backup de dados importantes antes de executar ferramentas de reparo de disco ou limpeza de imagem.
+
 # 🪟 Windows Command Hub
 
 Comandos úteis e soluções práticas para resolver problemas comuns no Windows.
@@ -31,16 +35,10 @@ ipconfig /renew
 ipconfig /flushdns
 ```
 
-### ⚙️ Verificar integridade do sistema
+### ⚙️ Verificar integridade do sistema e reparar imagem do Windows
 
 ```cmd
-sfc /scannow
-```
-
-### 🧱 Reparar imagem do Windows
-
-```cmd
-DISM /Online /Cleanup-Image /RestoreHealth
+DISM /Online /Cleanup-Image /RestoreHealth & sfc /scannow
 ```
 
 ### 💾 Verificar e corrigir disco
