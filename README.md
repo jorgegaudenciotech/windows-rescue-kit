@@ -25,7 +25,7 @@ Ideal para:
 
 ### 🌐 Corrigir problemas de internet
 
-```bash
+```cmd
 ipconfig /release
 ipconfig /renew
 ipconfig /flushdns
@@ -33,19 +33,19 @@ ipconfig /flushdns
 
 ### ⚙️ Verificar integridade do sistema
 
-```bash
+```cmd
 sfc /scannow
 ```
 
 ### 🧱 Reparar imagem do Windows
 
-```bash
+```cmd
 DISM /Online /Cleanup-Image /RestoreHealth
 ```
 
 ### 💾 Verificar e corrigir disco
 
-```bash
+```cmd
 chkdsk /f /r
 ```
 
@@ -58,7 +58,7 @@ chkdsk /f /r
 1. Abra o CMD como administrador
 2. Execute:
 
-```bash
+```cmd
 ipconfig /release
 ipconfig /renew
 ipconfig /flushdns
@@ -68,7 +68,7 @@ ipconfig /flushdns
 
 ### 🐢 Computador lento
 
-```bash
+```cmd
 sfc /scannow
 DISM /Online /Cleanup-Image /RestoreHealth
 ```
@@ -77,7 +77,7 @@ DISM /Online /Cleanup-Image /RestoreHealth
 
 ### 💽 Erros no disco
 
-```bash
+```cmd
 chkdsk /f /r
 ```
 
