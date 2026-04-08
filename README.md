@@ -38,7 +38,11 @@ ipconfig /flushdns
 ### ⚙️ Verificar integridade do sistema e reparar imagem do Windows
 
 ```cmd
-DISM /Online /Cleanup-Image /RestoreHealth & sfc /scannow
+sfc /scannow
+dism /online /cleanup-image /checkhealth
+dism /online /cleanup-image /scanhealth
+DISM /Online /Cleanup-Image /restoreHealth
+sfc /scannow
 ```
 
 ### 💾 Verificar e corrigir disco
@@ -60,23 +64,6 @@ chkdsk /f /r
 ipconfig /release
 ipconfig /renew
 ipconfig /flushdns
-```
-
----
-
-### 🐢 Computador lento
-
-```cmd
-sfc /scannow
-DISM /Online /Cleanup-Image /RestoreHealth
-```
-
----
-
-### 💽 Erros no disco
-
-```cmd
-chkdsk /f /r
 ```
 
 ---
